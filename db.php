@@ -37,6 +37,7 @@ if ($result->num_rows > 0) {
     <th>DayAmount</th>
     <th>Picture</th>
     <th>BookDate</th>
+    <th>edit delete</th>
     </tr>";
     // output data of each row
     while($row = $result->fetch_assoc()) {
@@ -51,7 +52,7 @@ if ($result->num_rows > 0) {
             "</td><td> ".$row["DayAmount"].
             "</td><td> ".$row["Picture"].
             "</td><td> ".$row["BookDate"].
-            "</td></tr>";
+            "</td><td><a href=''>edit</a> <a href=''>delete</a></td></tr>";
     }
 
     echo "</table>";
