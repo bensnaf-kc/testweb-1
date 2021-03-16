@@ -26,7 +26,9 @@ $sql = "SELECT * FROM book";
 $result = mysqli_query($conn, $sql);
 
 if ($result->num_rows > 0) {
+    echo "<a href='form_insert.php'>เพิ่ม</a>";
     echo "<center>";
+    
     echo "<table border='1'><tr><th>ID</th>
     <th>BookName</th>
     <th>TypeID</th>
